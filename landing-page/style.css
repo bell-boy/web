@@ -1,5 +1,9 @@
-body {
+body, html {
 	margin: 0px;
+	height: 150vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
@@ -33,6 +37,7 @@ a {
 .section {
 	display: flex;
 	height: 400px;
+	padding: 20px;
 	padding-right: 200px;
 	padding-left: 200px;
 	justify-content: space-between;
@@ -45,11 +50,15 @@ a {
 	flex-direction: column;
 	height: 100%;
 	width: 500px;
-	gap: 30px;
+	gap: 10px;
 }
 
-#first-section-container {	
+#first-section {	
 	background-color: #1F2937;
+}
+
+#second-section {
+	flex-direction: column;
 }
 
 .hero {
@@ -58,12 +67,28 @@ a {
 	font-weight: bold;
 }
 
-.subtext {
+
+.subtext-dark, .subtext-light {
+	margin: 5px;
+}
+
+.subtext-dark {
 	color: white;	
+}
+
+.subtext-light { 
+	color: black;
 }
 
 .hero-img {
 	width: 500px;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin: 30px;
 }
 
 .button {
@@ -74,4 +99,26 @@ a {
 	padding: 10px;
 	border-radius: 10px;
 	font-weight: bold;
+}
+
+.horizontal-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-box {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	width: 200px;
+}
+
+.info-box-image {
+	width: 150px;
+	height: 150px;
+	border: solid 3px #3882F6;
+	border-radius: 10px;
 }
