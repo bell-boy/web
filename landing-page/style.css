@@ -43,6 +43,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	gap: 10px;
+	flex-grow: 1;
 }
 
 .vertical-container {
@@ -58,6 +59,12 @@ a {
 }
 
 #second-section {
+	flex-direction: column;
+}
+
+#third-section {
+	background-color: #E5E7EB;
+	justify-content: center;
 	flex-direction: column;
 }
 
@@ -122,3 +129,36 @@ a {
 	border: solid 3px #3882F6;
 	border-radius: 10px;
 }
+
+.quote-text {
+	font-style: italic;	
+	font-weight: 100;
+	font-size: 50px;
+}
+
+#call-to-action {
+	background-color: #3882F6;
+	border-radius: 15px;
+	height: 100px;
+	align-items: center;
+	padding: 20px;
+	justify-content: center;
+	gap: 400px;
+}
+
+#call-to-action > .vertical-container {
+	height: 50px;
+	gap: 2px;
+	justify-content: center;	
+}
+
+#call-to-action > .vertical-container > div {
+	color: white;
+}
+
+#call-to-action > .button {
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+}
+
